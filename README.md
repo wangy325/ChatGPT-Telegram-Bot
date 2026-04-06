@@ -89,6 +89,16 @@ The following is a list of environment variables related to the bot's plugin set
 | get_time | Whether to enable the date plugin. Default is `False`. | No |
 
 
+## Fugue Remote Deployment
+
+### One-click deployment
+
+Click the button below to deploy the pre-built Docker image on Fugue with one click:
+
+[![Deploy to Fugue](https://api.fugue.pro/button.svg)](https://fugue.pro/new/repository?source-mode=docker-image&name=chatgpt&image-ref=docker.io%2Fyym68686%2Fchatgpt%3Alatest&env%5BAPI%5D=&env%5BBASE_URL%5D=&env%5BBOT_TOKEN%5D=&env%5BWEB_HOOK%5D=)
+
+After opening the deploy page, fill in `BOT_TOKEN`, `API`, and `BASE_URL` in the environment editor, then deploy. `WEB_HOOK` is optional. If you already have a public domain for the app, set it to `https://your-domain/`; otherwise, you can leave it blank.
+
 ## Koyeb Remote Deployment
 
 There are two ways to deploy on Koyeb, one is to use the one-click deployment with the Docker image provided by Koyeb, and the other is to import this repository for deployment. Both methods are free. The first method is simple to deploy but cannot update automatically, while the second method is slightly more complex but can update automatically.

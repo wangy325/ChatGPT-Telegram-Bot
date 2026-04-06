@@ -91,6 +91,16 @@ ChatGPT Telegram 机器人是一个强大的 Telegram 机器人，支持兼容 O
 | get_time | 是否启用日期插件。默认值为 `False`。 | 否 |
 
 
+## Fugue 远程部署
+
+### 一键部署
+
+点击下面的按钮可以在 Fugue 上使用构建好的 Docker 镜像一键部署：
+
+[![Deploy to Fugue](https://api.fugue.pro/button.svg)](https://fugue.pro/new/repository?source-mode=docker-image&name=chatgpt&image-ref=docker.io%2Fyym68686%2Fchatgpt%3Alatest&env%5BAPI%5D=&env%5BBASE_URL%5D=&env%5BBOT_TOKEN%5D=&env%5BWEB_HOOK%5D=)
+
+打开部署页后，在环境变量编辑器中补全 `BOT_TOKEN`、`API`、`BASE_URL` 后直接部署即可。`WEB_HOOK` 为可选项；如果已经为应用配置了公网域名，可以填写 `https://你的域名/`，否则可以留空。
+
 ## Koyeb 远程部署
 
 可以使用两种方式部署在 koyeb 上部署，一种是使用 Koyeb 提供的 docker 镜像一键部署，另一种是导入本仓库部署。这两种方式都是免费的。第一种方式部署简单，但是无法自动更新，第二种方式部署稍微复杂，但是可以自动更新。
